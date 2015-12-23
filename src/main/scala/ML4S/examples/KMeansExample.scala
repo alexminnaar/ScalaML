@@ -19,7 +19,7 @@ object KMeansExample extends App {
   }
 
 
-  val SRDataset = Source.fromFile("datasets/311_Service_Requests_for_2009.csv")
+  val srDataset = Source.fromFile("datasets/311_Service_Requests_for_2009.csv")
     .getLines()
     .map(line => line.split(","))
     .filter(_(5) == "Noise")
@@ -47,7 +47,7 @@ object KMeansExample extends App {
       sum((dp1 - dp2).map(el => el * el))
 
 
-  val clusters = Kmeans.cluster(dataset = SRDataset,
+  val clusters = Kmeans.cluster(dataset = srDataset,
     numClusters = 6,
     distanceFunc = euclideanDistance)
 

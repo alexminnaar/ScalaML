@@ -1,30 +1,30 @@
-[info] Updating {file:/Users/alexminnaar/IdeaProjects/ML4S/project/}ml4s-build...
-[debug] :: resolving dependencies :: default#ml4s-build;0.1-SNAPSHOT
+[info] Updating {file:/Users/alexminnaar/IdeaProjects/MLwS/project/}mlws-build...
+[debug] :: resolving dependencies :: default#mlws-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
 [debug] 	refresh = false
 [debug] resolving dependencies for configuration 'compile'
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [compile]
 [debug] resolving dependencies for configuration 'runtime'
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [compile]
 [debug] resolving dependencies for configuration 'test'
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [test]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [compile]
 [debug] resolving dependencies for configuration 'provided'
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@59b2c73e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@17897acd
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
 [debug] 	[2.10.4] org.scala-lang#scala-library;2.10.4
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
 [info] Resolving org.scala-sbt#sbt;0.13.5 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;0.13.5 {provided=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#sbt;0.13.5
@@ -570,17 +570,17 @@
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-sbt#interface;0.13.5 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'optional'
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'compile-internal'
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [compile-internal]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [optional]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [compile-internal]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->compile]
@@ -901,22 +901,22 @@
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-sbt#interface;0.13.5 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'runtime-internal'
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [runtime-internal]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [runtime-internal]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'test-internal'
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [test-internal]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [test]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [optional]
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [test-internal]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->runtime]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->compile]
@@ -1237,18 +1237,18 @@
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->master]
 [debug] == resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-sbt#interface;0.13.5 [compile->default(compile)]
 [debug] resolving dependencies for configuration 'plugin'
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [plugin]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [plugin]
 [debug] resolving dependencies for configuration 'sources'
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [sources]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [sources]
 [debug] resolving dependencies for configuration 'docs'
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [docs]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [docs]
 [debug] resolving dependencies for configuration 'pom'
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [pom]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [pom]
 [debug] resolving dependencies for configuration 'scala-tool'
-[debug] == resolving dependencies for default#ml4s-build;0.1-SNAPSHOT [scala-tool]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->default]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->runtime]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->compile]
+[debug] == resolving dependencies for default#mlws-build;0.1-SNAPSHOT [scala-tool]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->default]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->runtime]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->compile]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->default]
@@ -1266,8 +1266,8 @@
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [runtime->compile]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->master]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->optional(default)]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->master]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->optional(default)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#jline;2.10.4 [optional->master(*)]
 [info] Resolving org.scala-lang#jline;2.10.4 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.4 {optional=[compile(*), master(*)]}
@@ -1282,11 +1282,11 @@
 [debug] 	typesafe-ivy-releases: revision in cache: org.fusesource.jansi#jansi;1.4
 [debug] 	found org.fusesource.jansi#jansi;1.4 in sbt-chain
 [debug] == resolving dependencies org.scala-lang#jline;2.10.4->org.fusesource.jansi#jansi;1.4 [compile->compile(*)]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->default]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->runtime]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->compile]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->master]
-[debug] == resolving dependencies default#ml4s-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->default]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->runtime]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->compile]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->master]
+[debug] == resolving dependencies default#mlws-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar
@@ -1337,19 +1337,19 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 769ms :: artifacts dl 23ms
-[debug] 	report for default#ml4s-build;0.1-SNAPSHOT compile produced in /Users/alexminnaar/IdeaProjects/ML4S/project/target/resolution-cache/reports/default-ml4s-build-compile.xml
-[debug] 	report for default#ml4s-build;0.1-SNAPSHOT runtime produced in /Users/alexminnaar/IdeaProjects/ML4S/project/target/resolution-cache/reports/default-ml4s-build-runtime.xml
-[debug] 	report for default#ml4s-build;0.1-SNAPSHOT test produced in /Users/alexminnaar/IdeaProjects/ML4S/project/target/resolution-cache/reports/default-ml4s-build-test.xml
-[debug] 	report for default#ml4s-build;0.1-SNAPSHOT provided produced in /Users/alexminnaar/IdeaProjects/ML4S/project/target/resolution-cache/reports/default-ml4s-build-provided.xml
-[debug] 	report for default#ml4s-build;0.1-SNAPSHOT optional produced in /Users/alexminnaar/IdeaProjects/ML4S/project/target/resolution-cache/reports/default-ml4s-build-optional.xml
-[debug] 	report for default#ml4s-build;0.1-SNAPSHOT compile-internal produced in /Users/alexminnaar/IdeaProjects/ML4S/project/target/resolution-cache/reports/default-ml4s-build-compile-internal.xml
-[debug] 	report for default#ml4s-build;0.1-SNAPSHOT runtime-internal produced in /Users/alexminnaar/IdeaProjects/ML4S/project/target/resolution-cache/reports/default-ml4s-build-runtime-internal.xml
-[debug] 	report for default#ml4s-build;0.1-SNAPSHOT test-internal produced in /Users/alexminnaar/IdeaProjects/ML4S/project/target/resolution-cache/reports/default-ml4s-build-test-internal.xml
-[debug] 	report for default#ml4s-build;0.1-SNAPSHOT plugin produced in /Users/alexminnaar/IdeaProjects/ML4S/project/target/resolution-cache/reports/default-ml4s-build-plugin.xml
-[debug] 	report for default#ml4s-build;0.1-SNAPSHOT sources produced in /Users/alexminnaar/IdeaProjects/ML4S/project/target/resolution-cache/reports/default-ml4s-build-sources.xml
-[debug] 	report for default#ml4s-build;0.1-SNAPSHOT docs produced in /Users/alexminnaar/IdeaProjects/ML4S/project/target/resolution-cache/reports/default-ml4s-build-docs.xml
-[debug] 	report for default#ml4s-build;0.1-SNAPSHOT pom produced in /Users/alexminnaar/IdeaProjects/ML4S/project/target/resolution-cache/reports/default-ml4s-build-pom.xml
-[debug] 	report for default#ml4s-build;0.1-SNAPSHOT scala-tool produced in /Users/alexminnaar/IdeaProjects/ML4S/project/target/resolution-cache/reports/default-ml4s-build-scala-tool.xml
-[debug] 	resolve done (769ms resolve - 23ms download)
+[debug] :: resolution report :: resolve 800ms :: artifacts dl 26ms
+[debug] 	report for default#mlws-build;0.1-SNAPSHOT compile produced in /Users/alexminnaar/IdeaProjects/MLwS/project/target/resolution-cache/reports/default-mlws-build-compile.xml
+[debug] 	report for default#mlws-build;0.1-SNAPSHOT runtime produced in /Users/alexminnaar/IdeaProjects/MLwS/project/target/resolution-cache/reports/default-mlws-build-runtime.xml
+[debug] 	report for default#mlws-build;0.1-SNAPSHOT test produced in /Users/alexminnaar/IdeaProjects/MLwS/project/target/resolution-cache/reports/default-mlws-build-test.xml
+[debug] 	report for default#mlws-build;0.1-SNAPSHOT provided produced in /Users/alexminnaar/IdeaProjects/MLwS/project/target/resolution-cache/reports/default-mlws-build-provided.xml
+[debug] 	report for default#mlws-build;0.1-SNAPSHOT optional produced in /Users/alexminnaar/IdeaProjects/MLwS/project/target/resolution-cache/reports/default-mlws-build-optional.xml
+[debug] 	report for default#mlws-build;0.1-SNAPSHOT compile-internal produced in /Users/alexminnaar/IdeaProjects/MLwS/project/target/resolution-cache/reports/default-mlws-build-compile-internal.xml
+[debug] 	report for default#mlws-build;0.1-SNAPSHOT runtime-internal produced in /Users/alexminnaar/IdeaProjects/MLwS/project/target/resolution-cache/reports/default-mlws-build-runtime-internal.xml
+[debug] 	report for default#mlws-build;0.1-SNAPSHOT test-internal produced in /Users/alexminnaar/IdeaProjects/MLwS/project/target/resolution-cache/reports/default-mlws-build-test-internal.xml
+[debug] 	report for default#mlws-build;0.1-SNAPSHOT plugin produced in /Users/alexminnaar/IdeaProjects/MLwS/project/target/resolution-cache/reports/default-mlws-build-plugin.xml
+[debug] 	report for default#mlws-build;0.1-SNAPSHOT sources produced in /Users/alexminnaar/IdeaProjects/MLwS/project/target/resolution-cache/reports/default-mlws-build-sources.xml
+[debug] 	report for default#mlws-build;0.1-SNAPSHOT docs produced in /Users/alexminnaar/IdeaProjects/MLwS/project/target/resolution-cache/reports/default-mlws-build-docs.xml
+[debug] 	report for default#mlws-build;0.1-SNAPSHOT pom produced in /Users/alexminnaar/IdeaProjects/MLwS/project/target/resolution-cache/reports/default-mlws-build-pom.xml
+[debug] 	report for default#mlws-build;0.1-SNAPSHOT scala-tool produced in /Users/alexminnaar/IdeaProjects/MLwS/project/target/resolution-cache/reports/default-mlws-build-scala-tool.xml
+[debug] 	resolve done (800ms resolve - 26ms download)
 [info] Done updating.

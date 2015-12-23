@@ -1,6 +1,5 @@
 package ML4S.exploratory
 
-import breeze.linalg.DenseVector
 import breeze.plot._
 import org.saddle.{Frame, Mat, Vec}
 
@@ -45,12 +44,13 @@ object Exploration extends App {
   //val xs = for (x <- fr.colAt(0).toSeq) yield x._2
   val ys = for (y <- fr.colAt(13).toSeq) yield y._2
 
-  f.subplot(0)
+  println(ys)
+ // f.subplot(0)
 
-  f.subplot(0) += hist(ys,20)
+  //f.subplot(0) += hist(ys,10)
 
 
-  /*
+
   val subplots = for (i <- 0 to 3; j <- 0 to 3)
   yield { f.subplot(4, 4, i + 4 * j)  }
 
@@ -63,6 +63,6 @@ object Exploration extends App {
     p.ylabel = "PRICE"
   }
 
-*/
+
 
 }
