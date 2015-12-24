@@ -42,7 +42,6 @@ object LrExample extends App {
   val pred = myLr.predict(weights,example)
 
 
-
   println(weights)
 
 println(pred)
