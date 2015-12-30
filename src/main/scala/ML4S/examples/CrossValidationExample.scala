@@ -2,14 +2,14 @@ package ML4S.examples
 
 import ML4S.supervised.LinearRegression
 import breeze.linalg.DenseMatrix
-import breeze.numerics.pow
+import breeze.numerics._
+import breeze.plot.{Figure, _}
 import breeze.stats.mean
 
 import scala.io.Source
 
 
-object LrExample extends App {
-
+object CrossValidationExample extends App {
 
   def line2Data(line: String): Array[Double] = {
 
@@ -33,6 +33,8 @@ object LrExample extends App {
   val X = dm(::, 0 to 12)
   val y = dm(::, -1).toDenseMatrix.t
 
+  val mseEvaluator = (pred: DenseMatrix[Double], target: DenseMatrix[Double])
+  => mean((pred - target).map(x => pow(x, 2)))
 
   //create LR object with our dataset
   val myLr = new LinearRegression(
@@ -40,24 +42,35 @@ object LrExample extends App {
     outputs = y
   )
 
-  //Train LR weights
-  val weights = myLr.train()
 
-  val testX = X(0 to 30, ::)
-  val testY = y(0 to 30, ::)
+  var i = 0.000001
 
-  val pred = myLr.predict(weights, testX)
+  var errors = Vector.empty[Double]
+  var paramVals = Vector.empty[Double]
+  var counter = 0
 
-  val mseEvaluator = (pred: DenseMatrix[Double], target: DenseMatrix[Double])
-  => mean((pred - target).map(x => pow(x, 2)))
+  while (i < 1000) {
 
-  val mse = myLr.evaluate(
-    weights = weights,
-    inputs = testX,
-    targets = testY,
-    evaluator = mseEvaluator
-  )
+    val cvError = myLr.crossValidation(
+      folds = 5,
+      regularizationParam = i,
+      evaluator = mseEvaluator
+    )
 
-  println(mse)
+    i *= 10
+
+    counter +=1
+    errors :+= cvError
+    paramVals :+= counter.toDouble
+  }
+
+  println(errors.size)
+  println(paramVals.size)
+
+  val f = Figure()
+  val p = f.subplot(0)
+
+  p += plot(paramVals.toIndexedSeq,errors.toIndexedSeq)
+
 
 }

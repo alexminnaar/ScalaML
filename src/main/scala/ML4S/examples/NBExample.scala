@@ -29,18 +29,20 @@ object NBExample extends App {
 
   val outputs = dataset.map(_._2)
 
+  val trainInputs = inputs(0 to 299, ::)
+  val trainOutputs = outputs.take(300)
 
   val myNB = new NaiveBayes(
-    dataX = inputs,
-    dataY = outputs
+    dataX = trainInputs,
+    dataY = trainOutputs
   )
 
   var correctCounter = 0
 
-  for(i <- 0 to outputs.length - 1){
+  (300 to 350).foreach { exampleId =>
 
-    val prediction = myNB.predict(inputs(i,::).t)
-    val actual = outputs(i)
+    val prediction = myNB.predict(inputs(exampleId,::).t)
+    val actual = outputs(exampleId)
 
     println(prediction,actual)
 
@@ -49,6 +51,6 @@ object NBExample extends App {
   }
 
   println(correctCounter)
-  println(correctCounter.toDouble/outputs.length)
+  println(correctCounter.toDouble/(300 to 350).length)
 
 }

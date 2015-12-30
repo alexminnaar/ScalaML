@@ -42,15 +42,28 @@ object NNExample extends App {
       .sum
 
 
-  val myNN = new NearestNeighbours(k = 4,
-    dataX = inputs,
-    dataY = outputs,
-    euclideanDist)
+  val trainInputs = inputs(0 to 299, ::)
+  val trainOutputs = outputs.take(300)
 
-  val ex = inputs(5, ::).t
 
-  val pred = myNN.predict(ex)
+  val myNN = new NearestNeighbours(
+    k = 4,
+    dataX = trainInputs,
+    dataY = trainOutputs,
+    euclideanDist
+  )
 
-  println(pred)
+  var correct = 0
+
+  (300 to 350).foreach { exampleId =>
+
+    val pred = myNN.predict(inputs(exampleId, ::).t)
+    val target = outputs(exampleId)
+
+    if (pred == target) correct += 1
+
+  }
+
+  println(correct.toDouble / (300 to 350).length)
 
 }
