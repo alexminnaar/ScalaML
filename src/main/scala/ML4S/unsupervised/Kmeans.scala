@@ -5,7 +5,7 @@ import scala.util.Random
 
 case class Cluster(mean: DenseVector[Double], assignedDataPoints: Seq[DenseVector[Double]])
 
-object Kmeans {
+object KMeans {
 
   def initializeClusters(dataSet: Seq[DenseVector[Double]],
                          numClusters: Int): Seq[Cluster] = {

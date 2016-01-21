@@ -2,7 +2,7 @@ package ML4S.examples
 
 import java.awt.{Color, Paint}
 
-import ML4S.unsupervised.Kmeans
+import ML4S.unsupervised.KMeans
 import breeze.linalg.{DenseVector, sum}
 import breeze.plot._
 
@@ -47,7 +47,7 @@ object KMeansExample extends App {
       sum((dp1 - dp2).map(el => el * el))
 
 
-  val clusters = Kmeans.cluster(dataset = srDataset,
+  val clusters = KMeans.cluster(dataset = srDataset,
     numClusters = 6,
     distanceFunc = euclideanDistance)
 
