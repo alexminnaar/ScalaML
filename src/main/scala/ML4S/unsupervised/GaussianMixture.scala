@@ -25,18 +25,6 @@ class GaussianMixture(dataPoints: DenseMatrix[Double],
     tiledMat
   }
 
-
-  def matrixHorzTile(vec: DenseMatrix[Double], repSize: Int): DenseMatrix[Double] = {
-
-    var tiledMat = vec
-
-    (0 to repSize).foreach { rep =>
-      tiledMat = DenseMatrix.horzcat(tiledMat, vec)
-    }
-
-    tiledMat
-  }
-
   def empiricalCov(data: DenseMatrix[Double]): DenseMatrix[Double] = {
 
     // println(data)
@@ -62,18 +50,10 @@ class GaussianMixture(dataPoints: DenseMatrix[Double],
     //println("posterior matrix: " + posteriorMat)
     (0 to numClusters - 1).foldLeft(Vector.empty[DenseVector[Double]]) { (acc, clustId) =>
 
-      //println("cluster: "+clustId)
-      //posteriors of datapoints for this cluster
       val clustPosterior = posteriorMat(::, clustId)
 
-      //println("cluster posterior: " + clustPosterior)
-      //println("datapoints: "+dataPoints)
-
-      //  println("data scaled by post: "+ (dataPoints(::, *) :* clustPosterior))
-      //sum_i(x_i*rim)
       val unnormalizedMu = sum(dataPoints(::, *) :* clustPosterior, Axis._0)
 
-      //    println("unnormalizedMu: "+unnormalizedMu)
       val normalizer = sum(clustPosterior)
 
       val normalizedMu = unnormalizedMu.map(_ / normalizer)
@@ -100,8 +80,6 @@ class GaussianMixture(dataPoints: DenseMatrix[Double],
         (dp - mu) * (dp - mu).t
       }
 
-      //println("unscaledCovariances: " + unscaledCovariances)
-      //sum of unscaledCovariances weighted by the cluster posterior
       var covariance = DenseMatrix.zeros[Double](dataDim, dataDim)
 
       (0 to dataPoints.rows - 1).foreach { dp =>
@@ -141,30 +119,17 @@ class GaussianMixture(dataPoints: DenseMatrix[Double],
 
 
     val clusterProbMat = dataPoints(*, ::).map { dp =>
-
-      //println("datapoint: "+dp)
       val dpProbPerCluster = clusters.map(cluster => cluster.pdf(dp))
-
-      //println("datapoint probability: "+dpProbPerCluster)
       DenseVector(dpProbPerCluster.toArray)
     }
 
-    //println("datapoint probability per cluster:"+clusterProbMat)
-
-
     val priorTiled = matrixVertTile(DenseMatrix(pi), dataPoints.rows - 2)
 
-    //println("prior tiled matrix by rows: "+priorTiled)
-
     val unnormalizedPosterior = clusterProbMat :* priorTiled
-
-    //println("UnnormalizedPosterior: "+unnormalizedPosterior)
 
     unnormalizedPosterior(*, ::).map { post =>
 
       val normalizer = sum(post)
-
-      //println("normalizer: "+normalizer)
 
       post.map(_ / normalizer)
     }
@@ -273,13 +238,6 @@ class GaussianMixture(dataPoints: DenseMatrix[Double],
         .sum / numClusters
 
       println("change in pi: " + piChange)
-
-      //val currentMeans=currentClusters.map(cl=>cl.mean)
-
-
-      //f.subplot(0) += scatter(currentMeans.map(_(0)),currentMeans.map(_(1)) , { (_: Int) => 1000}, { (_: Int) => id2Color(0)})
-
-
     }
 
 
