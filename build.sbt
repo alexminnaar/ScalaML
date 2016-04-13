@@ -11,5 +11,8 @@ libraryDependencies ++= Seq(
   "org.scalanlp" %% "breeze-viz" % "0.11.2",
   "com.quantifind" %% "wisp" % "0.0.4",
   "org.scala-saddle" %% "saddle-core" % "1.3.4",
-  "org.scalatest" %% "scalatest" % "2.2.5"
+  "com.typesafe.akka" %% "akka-actor" % "2.3.12",
+  "org.scalatest" %% "scalatest" % "2.2.5",
+  "org.apache.spark" %% "spark-core" % "1.6.1",
+  "org.apache.spark" %% "spark-mllib" % "1.6.1"
 )

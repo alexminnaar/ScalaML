@@ -121,10 +121,10 @@ object FeedForwardNN {
 
       for (ex <- dataset) {
 
-        val (activations, output) = FeedForwardNN.forwardPass(ex.input, weights, activationFn)
-        val der = FeedForwardNN.backwardPass(activations, weights, output, ex.output, activationFn, activationFnDerivative)
+        val (activations, output) = forwardPass(ex.input, weights, activationFn)
+        val der = backwardPass(activations, weights, output, ex.output, activationFn, activationFnDerivative)
 
-        weights = FeedForwardNN.sgd(weights, der, learningRate)
+        weights = sgd(weights, der, learningRate)
       }
 
       epoch += 1

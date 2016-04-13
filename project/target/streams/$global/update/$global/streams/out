@@ -16,7 +16,7 @@
 [debug] == resolving dependencies for default#scalaml-build;0.1-SNAPSHOT [provided]
 [debug] == resolving dependencies default#scalaml-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e726c53
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74de4861
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
@@ -1337,7 +1337,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 746ms :: artifacts dl 19ms
+[debug] :: resolution report :: resolve 1009ms :: artifacts dl 27ms
 [debug] 	report for default#scalaml-build;0.1-SNAPSHOT compile produced in /home/aminnaar/IdeaProjects/ScalaML/project/target/resolution-cache/reports/default-scalaml-build-compile.xml
 [debug] 	report for default#scalaml-build;0.1-SNAPSHOT runtime produced in /home/aminnaar/IdeaProjects/ScalaML/project/target/resolution-cache/reports/default-scalaml-build-runtime.xml
 [debug] 	report for default#scalaml-build;0.1-SNAPSHOT test produced in /home/aminnaar/IdeaProjects/ScalaML/project/target/resolution-cache/reports/default-scalaml-build-test.xml
@@ -1351,5 +1351,5 @@
 [debug] 	report for default#scalaml-build;0.1-SNAPSHOT docs produced in /home/aminnaar/IdeaProjects/ScalaML/project/target/resolution-cache/reports/default-scalaml-build-docs.xml
 [debug] 	report for default#scalaml-build;0.1-SNAPSHOT pom produced in /home/aminnaar/IdeaProjects/ScalaML/project/target/resolution-cache/reports/default-scalaml-build-pom.xml
 [debug] 	report for default#scalaml-build;0.1-SNAPSHOT scala-tool produced in /home/aminnaar/IdeaProjects/ScalaML/project/target/resolution-cache/reports/default-scalaml-build-scala-tool.xml
-[debug] 	resolve done (746ms resolve - 19ms download)
+[debug] 	resolve done (1009ms resolve - 27ms download)
 [info] Done updating.
